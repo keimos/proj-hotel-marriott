@@ -1,0 +1,9 @@
+certifi==2024.8.30
+packaging==24.1
+setuptools==76.0.0
+wheel @ file:///usr/local/Cellar/python%403.12/3.12.7/libexec/wheel-0.44.0-py3-none-any.whl#sha256=c01326144883c50263d6967d1145640f3bbc8dfab32c2cbe817ef61d7a810219
+Flask==2.2.5
+Flask-WTF==1.1.1
+Flask-SQLAlchemy==3.1.1
+WTForms==3.1.2
+Werkzeug==2.3.8
