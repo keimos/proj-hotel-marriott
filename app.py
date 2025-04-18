@@ -37,5 +37,9 @@ def reserve():
             flash('Reservation failed. Please try again: {}'.format(str(e)), 'danger')
     return render_template('reserve.html', form=form)
 
+@app.route('/success')
+def success():
+    return render_template('success.html')
+
 if ___name___ == '__main__':
     app.run(debug=True)
