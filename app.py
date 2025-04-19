@@ -41,14 +41,5 @@ def reserve():
 def success():
     return render_template('success.html')
 
-@app.errorhandler(HTTPException)
-def handle_http_exception(e):
-    return render_template('error.html', error=e), e.code
-
-@app.errorhandler(Exception)
-def handle_exception(e):
-    app.logger.error(f'Unhandled Exception: {str(e)}')
-    return render_template('error.html', error="An unexpected error occurred."), 500
-
 if ___name___ == '__main__':
     app.run(debug=True)
