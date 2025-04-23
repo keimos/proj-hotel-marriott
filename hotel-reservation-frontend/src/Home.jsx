@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// Initial function for the home page
 function Home() {
     return (
         <div className="container">
