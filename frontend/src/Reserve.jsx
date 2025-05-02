@@ -12,10 +12,14 @@ function Reserve() {
 
     const navigate = useNavigate();
 
+    const handleChange = (e) => {
+      setForm({ ...form, [e.target.name]: e.target.value });
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await
+            await axios.post("http://localhst:5000/reserve", form);
             navigate("/success");
         } catch (error) {
             console.error("There was an error making the reservation!", error);
@@ -23,4 +27,7 @@ function Reserve() {
         }
     };
 
-    
+    return ();
+}
+
+export default Reserve;
